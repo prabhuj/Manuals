@@ -63,6 +63,10 @@ qdrouterd --help
 qdrouterd --daemon --config=/tmp/qdrouterd.conf
 qdrouterd --daemon (default config - /usr/local/etc/qpid-dispatch/qdrouterd.conf)
 ps -ef | grep qdrouter
+
+cd /tmp/qpid-dispatch-0.5/build
+./run.py unit_tests_size 3
+./run.py -m unittest system_tests_qdstat
 ```
 
 ++ 
