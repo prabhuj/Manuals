@@ -51,3 +51,4 @@ curl -XPOST 'http://localhost:9200/_shutdown'
 To restart elasticsearch automatically when the server is rebooted,
 
 sudo update-rc.d elasticsearch defaults 95 10
+
