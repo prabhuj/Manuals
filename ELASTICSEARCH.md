@@ -1,5 +1,6 @@
 # ELASTICSEARCH Installation
 
+# Try installing as stack
 mkdir /app
 
 chmod -R 777 /app
@@ -18,6 +19,7 @@ To make it accessible to others
 network.host: 0.0.0.0
 ```
 
+Do not run as root
 /app/elasticsearch-2.1.1/bin/elasticsearch -d
 
 ps -ef | grep elasticsearch
@@ -50,5 +52,6 @@ curl -XPOST 'http://localhost:9200/_shutdown'
 
 To restart elasticsearch automatically when the server is rebooted,
 
+does not work
 sudo update-rc.d elasticsearch defaults 95 10
 
